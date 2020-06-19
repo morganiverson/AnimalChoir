@@ -51,8 +51,6 @@ class Note {
 
         sound = document.getElementById(this.getSoundURL());
 
-
-
         if (this.pos != "rest") {
             //                    console.log("SOUND::" + sound.id);
             //console.log("SOUND DURATION:: " + sound.duration);
@@ -92,7 +90,7 @@ class Note {
     }
 }
 
- enterPage() {
+function enterPage() {
     var enter_btn = document.getElementById("enter_btn");
     enter_btn.addEventListener("click", function(){
         document.getElementById("enter_btn").style.display = "none";
