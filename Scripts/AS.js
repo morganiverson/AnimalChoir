@@ -4,15 +4,18 @@ var lineSounds;
 //hold urls
 var choir = document.getElementById("choir_type");
 console.log(choir.innerHTML);
+var animal_choir = true;
 
 function setChoir() {
 
 
     if(choir.innerHTML.indexOf("Animal") != -1) {
+        animal_choir = true;
         spaceSounds = ["cow", "dog", "monkey", "frog", "rooster", "bird"]; //add note
         lineSounds = ["pig", "elephant", "cat", "duck", "parot"];
     }
     else if (choir.innerHTML.indexOf("Robot") != -1) {
+        animal_choir = false;
         spaceSounds = ["lightsaber", "atari", "arm", "short", "blip2", "dying"]; //add note
         lineSounds = ["laser", "pingas", "motor", "blip", "sping"];
     }
@@ -113,7 +116,7 @@ var lineSelected = "";
 var spaceSelected = "";
 
 
-var path = "Note_IMG/";
+var path = (animal_choir) ? "Note_IMG/": "https://mwiv.github.io/AnimalChoir/Note_IMG/";
 
 setSpaceHovers();
 setLineHovers();
