@@ -19,7 +19,6 @@ function setChoir() {
         spaceSounds = ["lightsaber", "atari", "arm", "short", "blip2", "dying"]; //add note
         lineSounds = ["laser", "pingas", "motor", "blip", "sping"];
     }
-    else if (choir.innerHTML("Gospel") != -1){}
 }
 var hover = false;
 class Note {
@@ -116,7 +115,8 @@ var lineSelected = "";
 var spaceSelected = "";
 
 
-var path = ((animal_choir) ? "Note_IMG/": "https://mwiv.github.io/AnimalChoir/Note_IMG/");
+var path = ((animal_choir) ? "Note_IMG/" : "https://mwiv.github.io/AnimalChoir/Note_IMG/");
+console.log("PATH:: " + path);
 
 setSpaceHovers();
 setLineHovers();
@@ -175,7 +175,7 @@ var clicked = 0;
 var clickedLine = 0;
 var clickedSpace = 0;
 
-var invisibleIMG = "<img src = 'Note_IMG/invisible.png' class = 'INVS'>";
+var invisibleIMG = "<img src = " + ((animal_choir) ? 'Note_IMG/invisible.png': 'https://mwiv.github.io/AnimalChoir/Note_IMG/invisible.png') + " class = 'INVS'>" : ;
 
 //REMOVE INVISIBLE NOTES FOLLOWING HELD NOTE
 function removeFollowers(id, img) {
