@@ -98,9 +98,7 @@ function enterPage() {
         document.getElementById("enter_div").style.opacity = "100%";
 
         hover = true;
-
-
-    });
+});
 
 }
 
