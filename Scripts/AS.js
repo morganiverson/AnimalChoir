@@ -19,7 +19,9 @@ function setChoir() {
         spaceSounds = ["lightsaber", "atari", "arm", "short", "blip2", "dying"]; //add note
         lineSounds = ["laser", "pingas", "motor", "blip", "sping"];
     }
+    console.log("ANIMAL CHOIR:: " + animal_choir);
 }
+
 var hover = false;
 class Note {
     constructor(name, pos) {
@@ -90,7 +92,7 @@ class Note {
     }
 }
 
-function enterPage() {
+ enterPage() {
     var enter_btn = document.getElementById("enter_btn");
     enter_btn.addEventListener("click", function(){
         document.getElementById("enter_btn").style.display = "none";
