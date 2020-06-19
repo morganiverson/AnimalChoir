@@ -175,7 +175,7 @@ var clicked = 0;
 var clickedLine = 0;
 var clickedSpace = 0;
 
-var invisibleIMG = "<img src = 'Animal_Choir_Note_IMG/invisible.png' class = 'INVS'>";
+var invisibleIMG = "<img src = 'Note_IMG/invisible.png' class = 'INVS'>";
 
 //REMOVE INVISIBLE NOTES FOLLOWING HELD NOTE
 function removeFollowers(id, img) {
