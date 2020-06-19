@@ -1,543 +1,541 @@
 <html>
     <head>
         <title>Animal Choir</title>
-        <link type="text/css" rel = "stylesheet" href =  "https://people.emich.edu/miverson/MTCreative/AS.css">      
-<!--<link rel = stylesheet type = "text/css" href = "AS.css">-->
-    
-</head>
+        <!-- CSS DOC -->
+        <link type="text/css" rel = "stylesheet" href =  "https://github.com/mwiv/AnimalChoir/blob/master/AS.css">      
+        <!--<link rel = stylesheet type = "text/css" href = "AS.css">-->
 
-<body onload="enterPage(); setChoir();">
-    <button class = "enter_btn" id = "enter_btn">ENTER</button>
-    <h3 class = "enter_txt" id = "enter_txt">LET'S MAKE MUSIC!</h3>
-    <h1 class = "title_text" id = "choir_type">Animal Choir</h1>
-    <div class = "enter" id = "enter_div">
-        
-        
-    <div class = title>
-        
-        <h3>By Morgan I.</h3>
-        <h3 class = "dir">Directions: Pick a note type (eighth, quarter, half, whole rest or note) and a note pitch. And listen to your Animal Choir sing!</h3>
-    
-    </div>
-<div class = "game_div">
+    </head>
 
-    <table class = "cont">
-       
-        <tr>
-            <td>
-                <div class="staff" id="staff">
-                    <span id = "clef">
-                <hr class = "cspace">
-                <hr class = "cline">
-                <hr class = "cspace">
-                <hr class = "cline">
-                <hr class = "cspace">
-                <hr class = "cline">
-                <hr class = "cspace">
-                <hr class = "cline">
-                <hr class = "cspace">
-                <hr class = "cline">
-                <hr class = "cspace">
-                <img class = "clef" src = "https://people.emich.edu/miverson/MTCreative/images/clef.png">
-    <!--            <img class = endMeasure src = "barline.png">-->
-            </span>
-                    <!--MEASURE 1-->
-                    <span id = "m1">
-            <span class="note" id="b1n1">
-                <hr class="space" id="b1n1s6">
-                <hr class="line" id="b1n1l5">
-                <hr class="space" id="b1n1s5">
-                <hr class="line" id="b1n1l4">
-                <hr class="space" id="b1n1s4">
-                <hr class="line" id="b1n1l3">
-                <hr class="space" id="b1n1s3">
-                <hr class="line" id="b1n1l2">
-                <hr class="space" id="b1n1s2">
-                <hr class="line" id="b1n1l1">
-                <hr class="space" id="b1n1s1">
-                <span id="b1note1" class = "noteIMG"></span>
-    <!--            <span id="b1note1" class = "noteIMG"><img src = "eighth.png" class = "eighthNote"></span>-->
-    <!--            <span id="b1note2" class = "noteIMG"><img class = "wholeNote" src = "whole.png"></span>-->
-            </span>
-            <span class = "note" id = "b1n2">
-                <hr class = "space" id = "b1n2s6">
-                <hr class = "line"  id = "b1n2l5">
-                <hr class = "space" id = "b1n2s5">
-                <hr class = "line"  id = "b1n2l4">
-                <hr class = "space" id = "b1n2s4">
-                <hr class = "line"  id = "b1n2l3">
-                <hr class = "space" id = "b1n2s3">
-                <hr class = "line"  id = "b1n2l2">
-                <hr class = "space" id = "b1n2s2">
-                <hr class = "line"  id = "b1n2l1">
-                <hr class = "space" id = "b1n2s1">
-                <span id = "b1note2" class = "noteIMG"></span>
-            </span>
-            <span class = "note" id = "b1n3">
-                <hr class = "space" id = "b1n3s6">
-                <hr class = "line"  id = "b1n3l5">
-                <hr class = "space" id = "b1n3s5">
-                <hr class = "line"  id = "b1n3l4">
-                <hr class = "space" id = "b1n3s4">
-                <hr class = "line"  id = "b1n3l3">
-                <hr class = "space" id = "b1n3s3">
-                <hr class = "line"  id = "b1n3l2">
-                <hr class = "space" id = "b1n3s2">
-                <hr class = "line"  id = "b1n3l1">
-                <hr class = "space" id = "b1n3s1">
-                <span id = "b1note3" class = "noteIMG"></span>
-            </span>
-            <span class = "note" id = "b1n4">
-                <hr class = "space" id = "b1n4s6">
-                <hr class = "line"  id = "b1n4l5">
-                <hr class = "space" id = "b1n4s5">
-                <hr class = "line"  id = "b1n4l4">
-                <hr class = "space" id = "b1n4s4">
-                <hr class = "line"  id = "b1n4l3">
-                <hr class = "space" id = "b1n4s3">
-                <hr class = "line"  id = "b1n4l2">
-                <hr class = "space" id = "b1n4s2">
-                <hr class = "line"  id = "b1n4l1">
-                <hr class = "space" id = "b1n4s1">
-    <span id = "b1note4" class = "noteIMG"></span>
-            </span>
-            <span class = "note" id = "b1n5">
-                <hr class = "space" id = "b1n5s6">
-                <hr class = "line"  id = "b1n5l5">
-                <hr class = "space" id = "b1n5s5">
-                <hr class = "line"  id = "b1n5l4">
-                <hr class = "space" id = "b1n5s4">
-                <hr class = "line"  id = "b1n5l3">
-                <hr class = "space" id = "b1n5s3">
-                <hr class = "line"  id = "b1n5l2">
-                <hr class = "space" id = "b1n5s2">
-                <hr class = "line"  id = "b1n5l1">
-                <hr class = "space" id = "b1n5s1">
-    <span id = "b1note5" class = "noteIMG"></span>
-            </span>
-            <span class = "note" id = "b1n6">
-                <hr class = "space" id = "b1n6s6">
-                <hr class = "line"  id = "b1n6l5">
-                <hr class = "space" id = "b1n6s5">
-                <hr class = "line"  id = "b1n6l4">
-                <hr class = "space" id = "b1n6s4">
-                <hr class = "line"  id = "b1n6l3">
-                <hr class = "space" id = "b1n6s3">
-                <hr class = "line"  id = "b1n6l2">
-                <hr class = "space" id = "b1n6s2">
-                <hr class = "line"  id = "b1n6l1">
-                <hr class = "space" id = "b1n6s1">
-    <span id = "b1note6" class = "noteIMG"></span>
-            </span>
-            <span class = "note" id = "b1n7">
-                <hr class = "space" id = "b1n7s6">
-                <hr class = "line"  id = "b1n7l5">
-                <hr class = "space" id = "b1n7s5">
-                <hr class = "line"  id = "b1n7l4">
-                <hr class = "space" id = "b1n7s4">
-                <hr class = "line"  id = "b1n7l3">
-                <hr class = "space" id = "b1n7s3">
-                <hr class = "line"  id = "b1n7l2">
-                <hr class = "space" id = "b1n7s2">
-                <hr class = "line"  id = "b1n7l1">
-                <hr class = "space" id = "b1n7s1">
-    <span id = "b1note7" class = "noteIMG"></span>
-            </span>
-            <span class = "note" id = "b1n8">
-                <hr class = "space" id = "b1n8s6">
-                <hr class = "line"  id = "b1n8l5">
-                <hr class = "space" id = "b1n8s5">
-                <hr class = "line"  id = "b1n8l4">
-                <hr class = "space" id = "b1n8s4">
-                <hr class = "line"  id = "b1n8l3">
-                <hr class = "space" id = "b1n8s3">
-                <hr class = "line"  id = "b1n8l2">
-                <hr class = "space" id = "b1n8s2">
-                <hr class = "line"  id = "b1n8l1">
-                <hr class = "space" id = "b1n8s1">
-                <span id = "b1note8" class = "noteIMG"></span>
-                <img class = "endMeasure" src = "https://people.emich.edu/miverson/MTCreative/images/barline.png">
-            </span>
-</span>
-                    <!--MEASURE 2-->
-                    <span id = "m2">
-            <span class="note" id="b2n1">
-                <hr class="space" id="b2n1s6">
-                <hr class="line"  id="b2n1l5">
-                <hr class="space" id="b2n1s5">
-                <hr class="line"  id="b2n1l4">
-                <hr class="space" id="b2n1s4">
-                <hr class="line"  id="b2n1l3">
-                <hr class="space" id="b2n1s3">
-                <hr class="line"  id="b2n1l2">
-                <hr class="space" id="b2n1s2">
-                <hr class="line"  id="b2n1l1">
-                <hr class="space" id="b2n1s1">
-                <span id="b2note1" class = "noteIMG"></span>
-            </span>
-            <span class = "note" id = "b2n2">
-                <hr class="space" id="b2n2s6">
-                <hr class="line"  id="b2n2l5">
-                <hr class="space" id="b2n2s5">
-                <hr class="line"  id="b2n2l4">
-                <hr class="space" id="b2n2s4">
-                <hr class="line"  id="b2n2l3">
-                <hr class="space" id="b2n2s3">
-                <hr class="line"  id="b2n2l2">
-                <hr class="space" id="b2n2s2">
-                <hr class="line"  id="b2n2l1">
-                <hr class="space" id="b2n2s1">
-                <span id="b2note2" class = "noteIMG"></span>
-            </span>
-            <span class = "note" id = "b2n3">
-                <hr class="space" id="b2n3s6">
-                <hr class="line"  id="b2n3l5">
-                <hr class="space" id="b2n3s5">
-                <hr class="line"  id="b2n3l4">
-                <hr class="space" id="b2n3s4">
-                <hr class="line"  id="b2n3l3">
-                <hr class="space" id="b2n3s3">
-                <hr class="line"  id="b2n3l2">
-                <hr class="space" id="b2n3s2">
-                <hr class="line"  id="b2n3l1">
-                <hr class="space" id="b2n3s1">
-                <span id="b2note3" class = "noteIMG"></span>
-            </span>
-            <span class = "note" id = "b2n4">
-                <hr class="space" id="b2n4s6">
-                <hr class="line"  id="b2n4l5">
-                <hr class="space" id="b2n4s5">
-                <hr class="line"  id="b2n4l4">
-                <hr class="space" id="b2n4s4">
-                <hr class="line"  id="b2n4l3">
-                <hr class="space" id="b2n4s3">
-                <hr class="line"  id="b2n4l2">
-                <hr class="space" id="b2n4s2">
-                <hr class="line"  id="b2n4l1">
-                <hr class="space" id="b2n4s1">
-                <span id="b2note4" class = "noteIMG"></span>
-            </span>
-            <span class = "note" id = "b2n5">
-                <hr class="space" id="b2n5s6">
-                <hr class="line"  id="b2n5l5">
-                <hr class="space" id="b2n5s5">
-                <hr class="line"  id="b2n5l4">
-                <hr class="space" id="b2n5s4">
-                <hr class="line"  id="b2n5l3">
-                <hr class="space" id="b2n5s3">
-                <hr class="line"  id="b2n5l2">
-                <hr class="space" id="b2n5s2">
-                <hr class="line"  id="b2n5l1">
-                <hr class="space" id="b2n5s1">
-                <span id="b2note5" class = "noteIMG"></span>
-            </span>
-            <span class = "note" id = "b2n6">
-                <hr class="space" id="b2n6s6">
-                <hr class="line"  id="b2n6l5">
-                <hr class="space" id="b2n6s5">
-                <hr class="line"  id="b2n6l4">
-                <hr class="space" id="b2n6s4">
-                <hr class="line"  id="b2n6l3">
-                <hr class="space" id="b2n6s3">
-                <hr class="line"  id="b2n6l2">
-                <hr class="space" id="b2n6s2">
-                <hr class="line"  id="b2n6l1">
-                <hr class="space" id="b2n6s1">
-                <span id="b2note6" class = "noteIMG"></span>
-            </span>
-            <span class = "note" id = "b2n7">
-                <hr class="space" id="b2n7s6">
-                <hr class="line"  id="b2n7l5">
-                <hr class="space" id="b2n7s5">
-                <hr class="line"  id="b2n7l4">
-                <hr class="space" id="b2n7s4">
-                <hr class="line"  id="b2n7l3">
-                <hr class="space" id="b2n7s3">
-                <hr class="line"  id="b2n7l2">
-                <hr class="space" id="b2n7s2">
-                <hr class="line"  id="b2n7l1">
-                <hr class="space" id="b2n7s1">
-                <span id="b2note7" class = "noteIMG"></span>
-            </span>
-            <span class = "note" id = "b2n8">
-                <hr class="space" id="b2n8s6">
-                <hr class="line"  id="b2n8l5">
-                <hr class="space" id="b2n8s5">
-                <hr class="line"  id="b2n8l4">
-                <hr class="space" id="b2n8s4">
-                <hr class="line"  id="b2n8l3">
-                <hr class="space" id="b2n8s3">
-                <hr class="line"  id="b2n8l2">
-                <hr class="space" id="b2n8s2">
-                <hr class="line"  id="b2n8l1">
-                <hr class="space" id="b2n8s1">
-                <span id="b2note8" class = "noteIMG"></span>
-                <img class = "endMeasure" src = "https://people.emich.edu/miverson/MTCreative/images/barline.png">
-            </span>
-</span>
-                    <!--MEASURE 3-->
-            <span id = "m3">
-                <span class="note" id="b3n1">
-                <hr class="space" id="b3n1s6">
-                <hr class="line"  id="b3n1l5">
-                <hr class="space" id="b3n1s5">
-                <hr class="line"  id="b3n1l4">
-                <hr class="space" id="b3n1s4">
-                <hr class="line"  id="b3n1l3">
-                <hr class="space" id="b3n1s3">
-                <hr class="line"  id="b3n1l2">
-                <hr class="space" id="b3n1s2">
-                <hr class="line"  id="b3n1l1">
-                <hr class="space" id="b3n1s1">
-                <span id="b3note1" class = "noteIMG"></span>
-            </span>
-            <span class = "note" id = "b3n2">
-                <hr class="space" id="b3n2s6">
-                <hr class="line"  id="b3n2l5">
-                <hr class="space" id="b3n2s5">
-                <hr class="line"  id="b3n2l4">
-                <hr class="space" id="b3n2s4">
-                <hr class="line"  id="b3n2l3">
-                <hr class="space" id="b3n2s3">
-                <hr class="line"  id="b3n2l2">
-                <hr class="space" id="b3n2s2">
-                <hr class="line"  id="b3n2l1">
-                <hr class="space" id="b3n2s1">
-                <span id="b3note2" class = "noteIMG"></span>
-            </span>
-            <span class = "note" id = "b3n3">
-                <hr class="space" id="b3n3s6">
-                <hr class="line"  id="b3n3l5">
-                <hr class="space" id="b3n3s5">
-                <hr class="line"  id="b3n3l4">
-                <hr class="space" id="b3n3s4">
-                <hr class="line"  id="b3n3l3">
-                <hr class="space" id="b3n3s3">
-                <hr class="line"  id="b3n3l2">
-                <hr class="space" id="b3n3s2">
-                <hr class="line"  id="b3n3l1">
-                <hr class="space" id="b3n3s1">
-                <span id="b3note3" class = "noteIMG"></span>
-            </span>
-            <span class = "note" id = "b3n4">
-                <hr class="space" id="b3n4s6">
-                <hr class="line"  id="b3n4l5">
-                <hr class="space" id="b3n4s5">
-                <hr class="line"  id="b3n4l4">
-                <hr class="space" id="b3n4s4">
-                <hr class="line"  id="b3n4l3">
-                <hr class="space" id="b3n4s3">
-                <hr class="line"  id="b3n4l2">
-                <hr class="space" id="b3n4s2">
-                <hr class="line"  id="b3n4l1">
-                <hr class="space" id="b3n4s1">
-                <span id="b3note4" class = "noteIMG"></span>
-            </span>
-            <span class = "note" id = "b3n5">
-                <hr class="space" id="b3n5s6">
-                <hr class="line"  id="b3n5l5">
-                <hr class="space" id="b3n5s5">
-                <hr class="line"  id="b3n5l4">
-                <hr class="space" id="b3n5s4">
-                <hr class="line"  id="b3n5l3">
-                <hr class="space" id="b3n5s3">
-                <hr class="line"  id="b3n5l2">
-                <hr class="space" id="b3n5s2">
-                <hr class="line"  id="b3n5l1">
-                <hr class="space" id="b3n5s1">
-                <span id="b3note5" class = "noteIMG"></span>
-            </span>
-            <span class = "note" id = "b3n6">
-                <hr class="space" id="b3n6s6">
-                <hr class="line"  id="b3n6l5">
-                <hr class="space" id="b3n6s5">
-                <hr class="line"  id="b3n6l4">
-                <hr class="space" id="b3n6s4">
-                <hr class="line"  id="b3n6l3">
-                <hr class="space" id="b3n6s3">
-                <hr class="line"  id="b3n6l2">
-                <hr class="space" id="b3n6s2">
-                <hr class="line"  id="b3n6l1">
-                <hr class="space" id="b3n6s1">
-                <span id="b3note6" class = "noteIMG"></span>
-            </span>
-            <span class = "note" id = "b3n7">
-                <hr class="space" id="b3n7s6">
-                <hr class="line"  id="b3n7l5">
-                <hr class="space" id="b3n7s5">
-                <hr class="line"  id="b3n7l4">
-                <hr class="space" id="b3n7s4">
-                <hr class="line"  id="b3n7l3">
-                <hr class="space" id="b3n7s3">
-                <hr class="line"  id="b3n7l2">
-                <hr class="space" id="b3n7s2">
-                <hr class="line"  id="b3n7l1">
-                <hr class="space" id="b3n7s1">
-                <span id="b3note7" class = "noteIMG"></span>
-            </span>
-            <span class = "note" id = "b3n8">
-                <hr class="space" id="b3n8s6">
-                <hr class="line"  id="b3n8l5">
-                <hr class="space" id="b3n8s5">
-                <hr class="line"  id="b3n8l4">
-                <hr class="space" id="b3n8s4">
-                <hr class="line"  id="b3n8l3">
-                <hr class="space" id="b3n8s3">
-                <hr class="line"  id="b3n8l2">
-                <hr class="space" id="b3n8s2">
-                <hr class="line"  id="b3n8l1">
-                <hr class="space" id="b3n8s1">
-                <span id="b3note8" class = "noteIMG"></span>
-                <img class = "endSong" src = "https://people.emich.edu/miverson/MTCreative/images/doublebarline.png">
-            </span>
-                </span>
-                </div>
-            </td>
+    <body onload="enterPage(); setChoir();">
+        <button class = "enter_btn" id = "enter_btn">ENTER</button>
+        <h3 class = "enter_txt" id = "enter_txt">LET'S MAKE MUSIC!</h3>
+        <h1 class = "title_text" id = "choir_type">Animal Choir</h1>
+        <div class = "enter" id = "enter_div">
 
-           <td> <span class="note_choices">
 
-                <table class="select_notes">
-<!--                EIGHTH AND QUARTER-->
-                <tr> <td>
-                    <label>
-                        <input type="radio" name="note_type_select" value="eighth.png">
-                        <img class="eighthNote" src="https://people.emich.edu/miverson/MTCreative/images/eighth.png">
-                        
-                    </label>
-                    </td>
-<!--                QUARTER-->
-                    <td>
-                    <label>
-                        <input type="radio" name="note_type_select" value="quarter.png">
-                        <img class="quarterNote" src="https://people.emich.edu/miverson/MTCreative/images/quarter.png">
-                    </label>
+            <div class = title>
+
+                <h3>By Morgan I.</h3>
+                <h3 class = "dir">Directions: Pick a note type (eighth, quarter, half, whole rest or note) and a note pitch. And listen to your Animal Choir sing!</h3>
+
+            </div>
+            <div class = "game_div">
+
+                <table class = "cont">
+
+                    <tr>
+                        <td>
+                            <div class="staff" id="staff">
+                                <span id = "clef">
+                                    <hr class = "cspace">
+                                    <hr class = "cline">
+                                    <hr class = "cspace">
+                                    <hr class = "cline">
+                                    <hr class = "cspace">
+                                    <hr class = "cline">
+                                    <hr class = "cspace">
+                                    <hr class = "cline">
+                                    <hr class = "cspace">
+                                    <hr class = "cline">
+                                    <hr class = "cspace">
+                                    <img class = "clef" src = "https://people.emich.edu/miverson/MTCreative/images/clef.png">
+                                    <!--            <img class = endMeasure src = "barline.png">-->
+                                </span>
+                                <!--MEASURE 1-->
+                                <span id = "m1">
+                                    <span class="note" id="b1n1">
+                                        <hr class="space" id="b1n1s6">
+                                        <hr class="line" id="b1n1l5">
+                                        <hr class="space" id="b1n1s5">
+                                        <hr class="line" id="b1n1l4">
+                                        <hr class="space" id="b1n1s4">
+                                        <hr class="line" id="b1n1l3">
+                                        <hr class="space" id="b1n1s3">
+                                        <hr class="line" id="b1n1l2">
+                                        <hr class="space" id="b1n1s2">
+                                        <hr class="line" id="b1n1l1">
+                                        <hr class="space" id="b1n1s1">
+                                        <span id="b1note1" class = "noteIMG"></span>
+                                        <!--            <span id="b1note1" class = "noteIMG"><img src = "eighth.png" class = "eighthNote"></span>-->
+                                        <!--            <span id="b1note2" class = "noteIMG"><img class = "wholeNote" src = "whole.png"></span>-->
+                                    </span>
+                                    <span class = "note" id = "b1n2">
+                                        <hr class = "space" id = "b1n2s6">
+                                        <hr class = "line"  id = "b1n2l5">
+                                        <hr class = "space" id = "b1n2s5">
+                                        <hr class = "line"  id = "b1n2l4">
+                                        <hr class = "space" id = "b1n2s4">
+                                        <hr class = "line"  id = "b1n2l3">
+                                        <hr class = "space" id = "b1n2s3">
+                                        <hr class = "line"  id = "b1n2l2">
+                                        <hr class = "space" id = "b1n2s2">
+                                        <hr class = "line"  id = "b1n2l1">
+                                        <hr class = "space" id = "b1n2s1">
+                                        <span id = "b1note2" class = "noteIMG"></span>
+                                    </span>
+                                    <span class = "note" id = "b1n3">
+                                        <hr class = "space" id = "b1n3s6">
+                                        <hr class = "line"  id = "b1n3l5">
+                                        <hr class = "space" id = "b1n3s5">
+                                        <hr class = "line"  id = "b1n3l4">
+                                        <hr class = "space" id = "b1n3s4">
+                                        <hr class = "line"  id = "b1n3l3">
+                                        <hr class = "space" id = "b1n3s3">
+                                        <hr class = "line"  id = "b1n3l2">
+                                        <hr class = "space" id = "b1n3s2">
+                                        <hr class = "line"  id = "b1n3l1">
+                                        <hr class = "space" id = "b1n3s1">
+                                        <span id = "b1note3" class = "noteIMG"></span>
+                                    </span>
+                                    <span class = "note" id = "b1n4">
+                                        <hr class = "space" id = "b1n4s6">
+                                        <hr class = "line"  id = "b1n4l5">
+                                        <hr class = "space" id = "b1n4s5">
+                                        <hr class = "line"  id = "b1n4l4">
+                                        <hr class = "space" id = "b1n4s4">
+                                        <hr class = "line"  id = "b1n4l3">
+                                        <hr class = "space" id = "b1n4s3">
+                                        <hr class = "line"  id = "b1n4l2">
+                                        <hr class = "space" id = "b1n4s2">
+                                        <hr class = "line"  id = "b1n4l1">
+                                        <hr class = "space" id = "b1n4s1">
+                                        <span id = "b1note4" class = "noteIMG"></span>
+                                    </span>
+                                    <span class = "note" id = "b1n5">
+                                        <hr class = "space" id = "b1n5s6">
+                                        <hr class = "line"  id = "b1n5l5">
+                                        <hr class = "space" id = "b1n5s5">
+                                        <hr class = "line"  id = "b1n5l4">
+                                        <hr class = "space" id = "b1n5s4">
+                                        <hr class = "line"  id = "b1n5l3">
+                                        <hr class = "space" id = "b1n5s3">
+                                        <hr class = "line"  id = "b1n5l2">
+                                        <hr class = "space" id = "b1n5s2">
+                                        <hr class = "line"  id = "b1n5l1">
+                                        <hr class = "space" id = "b1n5s1">
+                                        <span id = "b1note5" class = "noteIMG"></span>
+                                    </span>
+                                    <span class = "note" id = "b1n6">
+                                        <hr class = "space" id = "b1n6s6">
+                                        <hr class = "line"  id = "b1n6l5">
+                                        <hr class = "space" id = "b1n6s5">
+                                        <hr class = "line"  id = "b1n6l4">
+                                        <hr class = "space" id = "b1n6s4">
+                                        <hr class = "line"  id = "b1n6l3">
+                                        <hr class = "space" id = "b1n6s3">
+                                        <hr class = "line"  id = "b1n6l2">
+                                        <hr class = "space" id = "b1n6s2">
+                                        <hr class = "line"  id = "b1n6l1">
+                                        <hr class = "space" id = "b1n6s1">
+                                        <span id = "b1note6" class = "noteIMG"></span>
+                                    </span>
+                                    <span class = "note" id = "b1n7">
+                                        <hr class = "space" id = "b1n7s6">
+                                        <hr class = "line"  id = "b1n7l5">
+                                        <hr class = "space" id = "b1n7s5">
+                                        <hr class = "line"  id = "b1n7l4">
+                                        <hr class = "space" id = "b1n7s4">
+                                        <hr class = "line"  id = "b1n7l3">
+                                        <hr class = "space" id = "b1n7s3">
+                                        <hr class = "line"  id = "b1n7l2">
+                                        <hr class = "space" id = "b1n7s2">
+                                        <hr class = "line"  id = "b1n7l1">
+                                        <hr class = "space" id = "b1n7s1">
+                                        <span id = "b1note7" class = "noteIMG"></span>
+                                    </span>
+                                    <span class = "note" id = "b1n8">
+                                        <hr class = "space" id = "b1n8s6">
+                                        <hr class = "line"  id = "b1n8l5">
+                                        <hr class = "space" id = "b1n8s5">
+                                        <hr class = "line"  id = "b1n8l4">
+                                        <hr class = "space" id = "b1n8s4">
+                                        <hr class = "line"  id = "b1n8l3">
+                                        <hr class = "space" id = "b1n8s3">
+                                        <hr class = "line"  id = "b1n8l2">
+                                        <hr class = "space" id = "b1n8s2">
+                                        <hr class = "line"  id = "b1n8l1">
+                                        <hr class = "space" id = "b1n8s1">
+                                        <span id = "b1note8" class = "noteIMG"></span>
+                                        <img class = "endMeasure" src = "https://people.emich.edu/miverson/MTCreative/images/barline.png">
+                                    </span>
+                                </span>
+                                <!--MEASURE 2-->
+                                <span id = "m2">
+                                    <span class="note" id="b2n1">
+                                        <hr class="space" id="b2n1s6">
+                                        <hr class="line"  id="b2n1l5">
+                                        <hr class="space" id="b2n1s5">
+                                        <hr class="line"  id="b2n1l4">
+                                        <hr class="space" id="b2n1s4">
+                                        <hr class="line"  id="b2n1l3">
+                                        <hr class="space" id="b2n1s3">
+                                        <hr class="line"  id="b2n1l2">
+                                        <hr class="space" id="b2n1s2">
+                                        <hr class="line"  id="b2n1l1">
+                                        <hr class="space" id="b2n1s1">
+                                        <span id="b2note1" class = "noteIMG"></span>
+                                    </span>
+                                    <span class = "note" id = "b2n2">
+                                        <hr class="space" id="b2n2s6">
+                                        <hr class="line"  id="b2n2l5">
+                                        <hr class="space" id="b2n2s5">
+                                        <hr class="line"  id="b2n2l4">
+                                        <hr class="space" id="b2n2s4">
+                                        <hr class="line"  id="b2n2l3">
+                                        <hr class="space" id="b2n2s3">
+                                        <hr class="line"  id="b2n2l2">
+                                        <hr class="space" id="b2n2s2">
+                                        <hr class="line"  id="b2n2l1">
+                                        <hr class="space" id="b2n2s1">
+                                        <span id="b2note2" class = "noteIMG"></span>
+                                    </span>
+                                    <span class = "note" id = "b2n3">
+                                        <hr class="space" id="b2n3s6">
+                                        <hr class="line"  id="b2n3l5">
+                                        <hr class="space" id="b2n3s5">
+                                        <hr class="line"  id="b2n3l4">
+                                        <hr class="space" id="b2n3s4">
+                                        <hr class="line"  id="b2n3l3">
+                                        <hr class="space" id="b2n3s3">
+                                        <hr class="line"  id="b2n3l2">
+                                        <hr class="space" id="b2n3s2">
+                                        <hr class="line"  id="b2n3l1">
+                                        <hr class="space" id="b2n3s1">
+                                        <span id="b2note3" class = "noteIMG"></span>
+                                    </span>
+                                    <span class = "note" id = "b2n4">
+                                        <hr class="space" id="b2n4s6">
+                                        <hr class="line"  id="b2n4l5">
+                                        <hr class="space" id="b2n4s5">
+                                        <hr class="line"  id="b2n4l4">
+                                        <hr class="space" id="b2n4s4">
+                                        <hr class="line"  id="b2n4l3">
+                                        <hr class="space" id="b2n4s3">
+                                        <hr class="line"  id="b2n4l2">
+                                        <hr class="space" id="b2n4s2">
+                                        <hr class="line"  id="b2n4l1">
+                                        <hr class="space" id="b2n4s1">
+                                        <span id="b2note4" class = "noteIMG"></span>
+                                    </span>
+                                    <span class = "note" id = "b2n5">
+                                        <hr class="space" id="b2n5s6">
+                                        <hr class="line"  id="b2n5l5">
+                                        <hr class="space" id="b2n5s5">
+                                        <hr class="line"  id="b2n5l4">
+                                        <hr class="space" id="b2n5s4">
+                                        <hr class="line"  id="b2n5l3">
+                                        <hr class="space" id="b2n5s3">
+                                        <hr class="line"  id="b2n5l2">
+                                        <hr class="space" id="b2n5s2">
+                                        <hr class="line"  id="b2n5l1">
+                                        <hr class="space" id="b2n5s1">
+                                        <span id="b2note5" class = "noteIMG"></span>
+                                    </span>
+                                    <span class = "note" id = "b2n6">
+                                        <hr class="space" id="b2n6s6">
+                                        <hr class="line"  id="b2n6l5">
+                                        <hr class="space" id="b2n6s5">
+                                        <hr class="line"  id="b2n6l4">
+                                        <hr class="space" id="b2n6s4">
+                                        <hr class="line"  id="b2n6l3">
+                                        <hr class="space" id="b2n6s3">
+                                        <hr class="line"  id="b2n6l2">
+                                        <hr class="space" id="b2n6s2">
+                                        <hr class="line"  id="b2n6l1">
+                                        <hr class="space" id="b2n6s1">
+                                        <span id="b2note6" class = "noteIMG"></span>
+                                    </span>
+                                    <span class = "note" id = "b2n7">
+                                        <hr class="space" id="b2n7s6">
+                                        <hr class="line"  id="b2n7l5">
+                                        <hr class="space" id="b2n7s5">
+                                        <hr class="line"  id="b2n7l4">
+                                        <hr class="space" id="b2n7s4">
+                                        <hr class="line"  id="b2n7l3">
+                                        <hr class="space" id="b2n7s3">
+                                        <hr class="line"  id="b2n7l2">
+                                        <hr class="space" id="b2n7s2">
+                                        <hr class="line"  id="b2n7l1">
+                                        <hr class="space" id="b2n7s1">
+                                        <span id="b2note7" class = "noteIMG"></span>
+                                    </span>
+                                    <span class = "note" id = "b2n8">
+                                        <hr class="space" id="b2n8s6">
+                                        <hr class="line"  id="b2n8l5">
+                                        <hr class="space" id="b2n8s5">
+                                        <hr class="line"  id="b2n8l4">
+                                        <hr class="space" id="b2n8s4">
+                                        <hr class="line"  id="b2n8l3">
+                                        <hr class="space" id="b2n8s3">
+                                        <hr class="line"  id="b2n8l2">
+                                        <hr class="space" id="b2n8s2">
+                                        <hr class="line"  id="b2n8l1">
+                                        <hr class="space" id="b2n8s1">
+                                        <span id="b2note8" class = "noteIMG"></span>
+                                        <img class = "endMeasure" src = "https://people.emich.edu/miverson/MTCreative/images/barline.png">
+                                    </span>
+                                </span>
+                                <!--MEASURE 3-->
+                                <span id = "m3">
+                                    <span class="note" id="b3n1">
+                                        <hr class="space" id="b3n1s6">
+                                        <hr class="line"  id="b3n1l5">
+                                        <hr class="space" id="b3n1s5">
+                                        <hr class="line"  id="b3n1l4">
+                                        <hr class="space" id="b3n1s4">
+                                        <hr class="line"  id="b3n1l3">
+                                        <hr class="space" id="b3n1s3">
+                                        <hr class="line"  id="b3n1l2">
+                                        <hr class="space" id="b3n1s2">
+                                        <hr class="line"  id="b3n1l1">
+                                        <hr class="space" id="b3n1s1">
+                                        <span id="b3note1" class = "noteIMG"></span>
+                                    </span>
+                                    <span class = "note" id = "b3n2">
+                                        <hr class="space" id="b3n2s6">
+                                        <hr class="line"  id="b3n2l5">
+                                        <hr class="space" id="b3n2s5">
+                                        <hr class="line"  id="b3n2l4">
+                                        <hr class="space" id="b3n2s4">
+                                        <hr class="line"  id="b3n2l3">
+                                        <hr class="space" id="b3n2s3">
+                                        <hr class="line"  id="b3n2l2">
+                                        <hr class="space" id="b3n2s2">
+                                        <hr class="line"  id="b3n2l1">
+                                        <hr class="space" id="b3n2s1">
+                                        <span id="b3note2" class = "noteIMG"></span>
+                                    </span>
+                                    <span class = "note" id = "b3n3">
+                                        <hr class="space" id="b3n3s6">
+                                        <hr class="line"  id="b3n3l5">
+                                        <hr class="space" id="b3n3s5">
+                                        <hr class="line"  id="b3n3l4">
+                                        <hr class="space" id="b3n3s4">
+                                        <hr class="line"  id="b3n3l3">
+                                        <hr class="space" id="b3n3s3">
+                                        <hr class="line"  id="b3n3l2">
+                                        <hr class="space" id="b3n3s2">
+                                        <hr class="line"  id="b3n3l1">
+                                        <hr class="space" id="b3n3s1">
+                                        <span id="b3note3" class = "noteIMG"></span>
+                                    </span>
+                                    <span class = "note" id = "b3n4">
+                                        <hr class="space" id="b3n4s6">
+                                        <hr class="line"  id="b3n4l5">
+                                        <hr class="space" id="b3n4s5">
+                                        <hr class="line"  id="b3n4l4">
+                                        <hr class="space" id="b3n4s4">
+                                        <hr class="line"  id="b3n4l3">
+                                        <hr class="space" id="b3n4s3">
+                                        <hr class="line"  id="b3n4l2">
+                                        <hr class="space" id="b3n4s2">
+                                        <hr class="line"  id="b3n4l1">
+                                        <hr class="space" id="b3n4s1">
+                                        <span id="b3note4" class = "noteIMG"></span>
+                                    </span>
+                                    <span class = "note" id = "b3n5">
+                                        <hr class="space" id="b3n5s6">
+                                        <hr class="line"  id="b3n5l5">
+                                        <hr class="space" id="b3n5s5">
+                                        <hr class="line"  id="b3n5l4">
+                                        <hr class="space" id="b3n5s4">
+                                        <hr class="line"  id="b3n5l3">
+                                        <hr class="space" id="b3n5s3">
+                                        <hr class="line"  id="b3n5l2">
+                                        <hr class="space" id="b3n5s2">
+                                        <hr class="line"  id="b3n5l1">
+                                        <hr class="space" id="b3n5s1">
+                                        <span id="b3note5" class = "noteIMG"></span>
+                                    </span>
+                                    <span class = "note" id = "b3n6">
+                                        <hr class="space" id="b3n6s6">
+                                        <hr class="line"  id="b3n6l5">
+                                        <hr class="space" id="b3n6s5">
+                                        <hr class="line"  id="b3n6l4">
+                                        <hr class="space" id="b3n6s4">
+                                        <hr class="line"  id="b3n6l3">
+                                        <hr class="space" id="b3n6s3">
+                                        <hr class="line"  id="b3n6l2">
+                                        <hr class="space" id="b3n6s2">
+                                        <hr class="line"  id="b3n6l1">
+                                        <hr class="space" id="b3n6s1">
+                                        <span id="b3note6" class = "noteIMG"></span>
+                                    </span>
+                                    <span class = "note" id = "b3n7">
+                                        <hr class="space" id="b3n7s6">
+                                        <hr class="line"  id="b3n7l5">
+                                        <hr class="space" id="b3n7s5">
+                                        <hr class="line"  id="b3n7l4">
+                                        <hr class="space" id="b3n7s4">
+                                        <hr class="line"  id="b3n7l3">
+                                        <hr class="space" id="b3n7s3">
+                                        <hr class="line"  id="b3n7l2">
+                                        <hr class="space" id="b3n7s2">
+                                        <hr class="line"  id="b3n7l1">
+                                        <hr class="space" id="b3n7s1">
+                                        <span id="b3note7" class = "noteIMG"></span>
+                                    </span>
+                                    <span class = "note" id = "b3n8">
+                                        <hr class="space" id="b3n8s6">
+                                        <hr class="line"  id="b3n8l5">
+                                        <hr class="space" id="b3n8s5">
+                                        <hr class="line"  id="b3n8l4">
+                                        <hr class="space" id="b3n8s4">
+                                        <hr class="line"  id="b3n8l3">
+                                        <hr class="space" id="b3n8s3">
+                                        <hr class="line"  id="b3n8l2">
+                                        <hr class="space" id="b3n8s2">
+                                        <hr class="line"  id="b3n8l1">
+                                        <hr class="space" id="b3n8s1">
+                                        <span id="b3note8" class = "noteIMG"></span>
+                                        <img class = "endSong" src = "https://people.emich.edu/miverson/MTCreative/images/doublebarline.png">
+                                    </span>
+                                </span>
+                            </div>
                         </td>
-                </tr>
-<!--                HALF AND WHOLE NOTES-->
-                <tr> <td>
-                    <label>
-                        <input type="radio" name="note_type_select" value="half.png">
-                        <img class="halfNote" src="https://people.emich.edu/miverson/MTCreative/images/half.png">
-                    </label>
-                    </td>
-                    <!--                WHOLE-->
-                <td>
-                    <label>
-                        <input type="radio" name="note_type_select" value="whole.png">
-                        <img class="wholeNote" src="https://people.emich.edu/miverson/MTCreative/images/whole.png">
-                    </label>
-                </td>
-            </tr>
-<!--                EIGHTH REST-->
-                <tr>
-                    <td>
-                    <label>
-                        <input type="radio" name="note_type_select" value="eighthrest.png">
-                        <img class="eighthrest" src="https://people.emich.edu/miverson/MTCreative/images/eighthrest.png">
-                    </label>
-</td><!--                QUARTER REST-->
-                <td>
-                <label>
-                        <input type="radio" name="note_type_select" value="quarterrest.png">
-                        <img class="quarterrest" src="https://people.emich.edu/miverson/MTCreative/images/quarterrest.png">
-                    </label>
-                </td>
-            </tr>
-<!--                HALF REST-->
-                <tr>
-                <td>
-                <label>
-                        <input type="radio" name="note_type_select" value="halfrest.png">
-                        <img class="halfrestb" src="https://people.emich.edu/miverson/MTCreative/images/halfrest.png">
-                    </label>
-                </td>
-<!--                WHOLE REST-->
-                <td>
-                <label>
-                        <input class = "noteInput" type="radio" name="note_type_select" value="wholerest.png">
-                        <img class="wholerestb" src="https://people.emich.edu/miverson/MTCreative/images/wholerest.png">
-                    </label>
-                </td>
-                </tr>
-        </table>
-            </span></td>
-     
-</tr>
-        </table>
-    
-    <table class = "btns">
-        <tr class = "btns"><td></td><td >  <button class = "btn" onclick = "playSong();">PLAY</button></td><td> <button id = clear onclick = "clearBoard();" class = "btn" >CLEAR</button> </td>
-            <td class = songs><br><button id = clear onclick = "playBaseSong(1);" class = "btn_song" >HOT CROSS BUNS</button>
-                <br>
-                <br>
-                <button id = clear onclick = "playBaseSong(2);" class = "btn_song" >TWINKLE LITTLE STAR</button>
-                <br>
-                <br>
-                <button id = clear onclick = "playBaseSong(3);" class = "btn_song" >MARY LITTLE LAMB</button>
-            </td></tr>
-        
-        </table>
 
-     </div>
-        <br>
-    <div id = "sites">
-        <table id = "sites">
-        <tr><td>
-            <button onclick = "window.location.href = 'https://people.emich.edu/miverson/MTCreative/RobotChoir.html'"  class = "robot_link">ROBOT CHOIR</button>
-        </td>
-            <td>
-            <button onclick = "window.location.href = 'https://people.emich.edu/miverson/MTCreative/AnimalChoir.html'"  disabled class = "animal_link">ANIMAL CHOIR</button>
-                </td>
-        </tr>
-        </table>
-    </div>
-    <div class = "audio_hold">
-       
-        
-<!-- SPACES-->
-    <audio id = "cow" >
-        <source src = "https://people.emich.edu/miverson/MTCreative/sounds/cow.mp3" type = "audio/mpeg">
-    </audio>
-        
-    <audio id = "dog" >
-        <source src = "https://people.emich.edu/miverson/MTCreative/sounds/dog.mp3">
-    </audio>
-    <audio id = "monkey" >
-        <source src = "https://people.emich.edu/miverson/MTCreative/sounds/monkey.mp3">
-    </audio>
-    <audio id = "frog">
-        <source src = "https://people.emich.edu/miverson/MTCreative/sounds/frog.mp3">
-    </audio>
-        <audio id = "rooster">
-        <source src = "https://people.emich.edu/miverson/MTCreative/sounds/rooster.mp3">
-    </audio>
-        <audio id = "bird" >
-        <source src = "https://people.emich.edu/miverson/MTCreative/sounds/bird.mp3" type = "audio/mpeg">
-    </audio>
-        
-<!--        LINES-->
-    <audio id = "pig" >
-        <source src = "https://people.emich.edu/miverson/MTCreative/sounds/pig.mp3">
-    </audio>
-        
-    <audio id = "elephant" >
-        <source src = "https://people.emich.edu/miverson/MTCreative/sounds/elephant.mp3">
-    </audio>
-    <audio id = "cat">
-        <source src = "https://people.emich.edu/miverson/MTCreative/sounds/cat.mp3">
-    </audio>
-    <audio id = "duck">
-        <source src = "https://people.emich.edu/miverson/MTCreative/sounds/duck.mp3">
-    </audio>
-    <audio id = "parot" >
-        <source src = "https://people.emich.edu/miverson/MTCreative/sounds/parot.mp3" type = "audio/mpeg">
-    </audio>
-    
-    </div>
+                        <td> <span class="note_choices">
+
+                            <table class="select_notes">
+                                <!--                EIGHTH AND QUARTER-->
+                                <tr> <td>
+                                    <label>
+                                        <input type="radio" name="note_type_select" value="eighth.png">
+                                        <img class="eighthNote" src="https://people.emich.edu/miverson/MTCreative/images/eighth.png">
+
+                                    </label>
+                                    </td>
+                                    <!--                QUARTER-->
+                                    <td>
+                                        <label>
+                                            <input type="radio" name="note_type_select" value="quarter.png">
+                                            <img class="quarterNote" src="https://people.emich.edu/miverson/MTCreative/images/quarter.png">
+                                        </label>
+                                    </td>
+                                </tr>
+                                <!--                HALF AND WHOLE NOTES-->
+                                <tr> <td>
+                                    <label>
+                                        <input type="radio" name="note_type_select" value="half.png">
+                                        <img class="halfNote" src="https://people.emich.edu/miverson/MTCreative/images/half.png">
+                                    </label>
+                                    </td>
+                                    <!--                WHOLE-->
+                                    <td>
+                                        <label>
+                                            <input type="radio" name="note_type_select" value="whole.png">
+                                            <img class="wholeNote" src="https://people.emich.edu/miverson/MTCreative/images/whole.png">
+                                        </label>
+                                    </td>
+                                </tr>
+                                <!--                EIGHTH REST-->
+                                <tr>
+                                    <td>
+                                        <label>
+                                            <input type="radio" name="note_type_select" value="eighthrest.png">
+                                            <img class="eighthrest" src="https://people.emich.edu/miverson/MTCreative/images/eighthrest.png">
+                                        </label>
+                                    </td><!--                QUARTER REST-->
+                                    <td>
+                                        <label>
+                                            <input type="radio" name="note_type_select" value="quarterrest.png">
+                                            <img class="quarterrest" src="https://people.emich.edu/miverson/MTCreative/images/quarterrest.png">
+                                        </label>
+                                    </td>
+                                </tr>
+                                <!--                HALF REST-->
+                                <tr>
+                                    <td>
+                                        <label>
+                                            <input type="radio" name="note_type_select" value="halfrest.png">
+                                            <img class="halfrestb" src="https://people.emich.edu/miverson/MTCreative/images/halfrest.png">
+                                        </label>
+                                    </td>
+                                    <!--                WHOLE REST-->
+                                    <td>
+                                        <label>
+                                            <input class = "noteInput" type="radio" name="note_type_select" value="wholerest.png">
+                                            <img class="wholerestb" src="https://people.emich.edu/miverson/MTCreative/images/wholerest.png">
+                                        </label>
+                                    </td>
+                                </tr>
+                            </table>
+                            </span></td>
+
+                    </tr>
+                </table>
+
+                <table class = "btns">
+                    <tr class = "btns"><td></td><td >  <button class = "btn" onclick = "playSong();">PLAY</button></td><td> <button id = clear onclick = "clearBoard();" class = "btn" >CLEAR</button> </td>
+                        <td class = songs><br><button id = clear onclick = "playBaseSong(1);" class = "btn_song" >HOT CROSS BUNS</button>
+                            <br>
+                            <br>
+                            <button id = clear onclick = "playBaseSong(2);" class = "btn_song" >TWINKLE LITTLE STAR</button>
+                            <br>
+                            <br>
+                            <button id = clear onclick = "playBaseSong(3);" class = "btn_song" >MARY LITTLE LAMB</button>
+                        </td></tr>
+
+                </table>
+
+            </div>
+            <br>
+            <div id = "sites">
+                <table id = "sites">
+                    <tr><td>
+                        <button onclick = "window.location.href = 'https://people.emich.edu/miverson/MTCreative/RobotChoir.html'"  class = "robot_link">ROBOT CHOIR</button>
+                        </td>
+                        <td>
+                            <button onclick = "window.location.href = 'https://people.emich.edu/miverson/MTCreative/AnimalChoir.html'"  disabled class = "animal_link">ANIMAL CHOIR</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class = "audio_hold">
+                
+                
+                
+                <!-- SPACES-->
+                <audio id = "cow" >
+                    <source src = "https://github.com/mwiv/AnimalChoir/tree/master/Animal_Choir_Note_IMG/cow.mp3" type = "audio/mpeg">
+                </audio>
+                <audio id = "dog" >
+                    <source src = "https://github.com/mwiv/AnimalChoir/tree/master/Animal_Choir_Note_IMG/dog.mp3">
+                </audio>
+                <audio id = "monkey" >
+                    <source src = "https://github.com/mwiv/AnimalChoir/tree/master/Animal_Choir_Note_IMG/monkey.mp3">
+                </audio>
+                <audio id = "frog">
+                    <source src = "https://github.com/mwiv/AnimalChoir/tree/master/Animal_Choir_Note_IMG/frog.mp3">
+                </audio>
+                <audio id = "rooster">
+                    <source src = "https://github.com/mwiv/AnimalChoir/tree/master/Animal_Choir_Note_IMG/rooster.mp3">
+                </audio>
+                <audio id = "bird" >
+                    <source src = "https://github.com/mwiv/AnimalChoir/tree/master/Animal_Choir_Note_IMG/bird.mp3" type = "audio/mpeg">
+                </audio>
+
+                <!-- LINES-->
+                <audio id = "pig" >
+                    <source src = "https://github.com/mwiv/AnimalChoir/tree/master/Animal_Choir_Note_IMG/pig.mp3">
+                </audio>
+                <audio id = "elephant" >
+                    <source src = "https://github.com/mwiv/AnimalChoir/tree/master/Animal_Choir_Note_IMG/elephant.mp3">
+                </audio>
+                <audio id = "cat">
+                    <source src = "https://github.com/mwiv/AnimalChoir/tree/master/Animal_Choir_Note_IMG/cat.mp3">
+                </audio>
+                <audio id = "duck">
+                    <source src = "https://github.com/mwiv/AnimalChoir/tree/master/Animal_Choir_Note_IMG/duck.mp3">
+                </audio>
+                <audio id = "parot" >
+                    <source src = "https://github.com/mwiv/AnimalChoir/tree/master/Animal_Choir_Note_IMG/parot.mp3" type = "audio/mpeg">
+                </audio>
+            </div>
         </div>
-    
-<script src = "https://people.emich.edu/miverson/MTCreative/AS.js"></script>
-<!--    <script src = "AS.js"></script>-->
-</body>
 
-//</html>
+        <script src = "https://github.com/mwiv/AnimalChoir/blob/master/AS.js"></script>
+        <!--    <script src = "AS.js"></script>-->
+    </body>
+</html>
