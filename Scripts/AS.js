@@ -116,7 +116,7 @@ var lineSelected = "";
 var spaceSelected = "";
 
 
-var path = (animal_choir) ? "Note_IMG/": "https://mwiv.github.io/AnimalChoir/Note_IMG/";
+var path = ((animal_choir) ? "Note_IMG/": "https://mwiv.github.io/AnimalChoir/Note_IMG/");
 
 setSpaceHovers();
 setLineHovers();
