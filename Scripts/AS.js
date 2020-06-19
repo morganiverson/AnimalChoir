@@ -6,6 +6,7 @@ var choir = document.getElementById("choir_type");
 console.log(choir.innerHTML);
 var animal_choir = true;
 var path = "";
+var invisibleIMG = "";
 
 function setChoir() {
 
@@ -21,7 +22,9 @@ function setChoir() {
         lineSounds = ["laser", "pingas", "motor", "blip", "sping"];
     }
     console.log("ANIMAL CHOIR:: " + animal_choir);
+    
     path = ((animal_choir) ? "Note_IMG/" : "https://mwiv.github.io/AnimalChoir/Note_IMG/");
+    invisibleIMG = "<img src = " + ((animal_choir) ? 'Note_IMG/invisible.png' : 'https://mwiv.github.io/AnimalChoir/Note_IMG/invisible.png') + " class = 'INVS'>";
     console.log("PATH:: " + path);
 }
 
@@ -175,7 +178,7 @@ var clicked = 0;
 var clickedLine = 0;
 var clickedSpace = 0;
 
-var invisibleIMG = "<img src = " + ((animal_choir) ? 'Note_IMG/invisible.png' : 'https://mwiv.github.io/AnimalChoir/Note_IMG/invisible.png') + " class = 'INVS'>";
+
 
 //REMOVE INVISIBLE NOTES FOLLOWING HELD NOTE
 function removeFollowers(id, img) {
