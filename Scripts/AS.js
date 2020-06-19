@@ -5,6 +5,7 @@ var lineSounds;
 var choir = document.getElementById("choir_type");
 console.log(choir.innerHTML);
 var animal_choir = true;
+var path = "";
 
 function setChoir() {
 
@@ -20,6 +21,7 @@ function setChoir() {
         lineSounds = ["laser", "pingas", "motor", "blip", "sping"];
     }
     console.log("ANIMAL CHOIR:: " + animal_choir);
+    path = ((animal_choir) ? "Note_IMG/" : "https://mwiv.github.io/AnimalChoir/Note_IMG/");
 }
 
 var hover = false;
@@ -113,7 +115,6 @@ var lineSelected = "";
 var spaceSelected = "";
 
 
-var path = ((animal_choir) ? "Note_IMG/" : "https://mwiv.github.io/AnimalChoir/Note_IMG/");
 console.log("PATH:: " + path);
 
 setSpaceHovers();
