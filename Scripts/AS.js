@@ -113,7 +113,7 @@ var lineSelected = "";
 var spaceSelected = "";
 
 
-var path = "Animal_Choir_Note_IMG";
+var path = "Animal_Choir_Note_IMG/";
 
 setSpaceHovers();
 setLineHovers();
