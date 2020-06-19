@@ -113,7 +113,7 @@ var lineSelected = "";
 var spaceSelected = "";
 
 
-var path = "https://github.com/mwiv/AnimalChoir/tree/master/Animal_Choir_Note_IMG";
+var path = "Animal_Choir_Note_IMG";
 
 setSpaceHovers();
 setLineHovers();
@@ -172,7 +172,7 @@ var clicked = 0;
 var clickedLine = 0;
 var clickedSpace = 0;
 
-var invisibleIMG = "<img src = 'https://github.com/mwiv/AnimalChoir/tree/master/Animal_Choir_Note_IMG/invisible.png' class = 'INVS'>";
+var invisibleIMG = "<img src = 'Animal_Choir_Note_IMG/invisible.png' class = 'INVS'>";
 
 //REMOVE INVISIBLE NOTES FOLLOWING HELD NOTE
 function removeFollowers(id, img) {
