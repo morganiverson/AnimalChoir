@@ -113,7 +113,7 @@ var lineSelected = "";
 var spaceSelected = "";
 
 
-var path = "https://github.com/mwiv/AnimalChoir/tree/master/Animal_Choir_Note_IMG/";
+var path = "https://github.com/mwiv/AnimalChoir/tree/master/Animal_Choir_Note_IMG";
 
 setSpaceHovers();
 setLineHovers();
