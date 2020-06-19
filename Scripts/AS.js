@@ -22,6 +22,7 @@ function setChoir() {
     }
     console.log("ANIMAL CHOIR:: " + animal_choir);
     path = ((animal_choir) ? "Note_IMG/" : "https://mwiv.github.io/AnimalChoir/Note_IMG/");
+    console.log("PATH:: " + path);
 }
 
 var hover = false;
@@ -115,7 +116,7 @@ var lineSelected = "";
 var spaceSelected = "";
 
 
-console.log("PATH:: " + path);
+
 
 setSpaceHovers();
 setLineHovers();
